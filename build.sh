@@ -5,7 +5,7 @@ DISTRO="${2}"
 TAG="${3:-v1.12.5}"
 
 echo "🦑 Arch(${ARCH})"
-echo "🫀 Disto(${DISTRO})"
+echo "🫀 Distro(${DISTRO})"
 echo "🏷️ Tag(${TAG})"
 
 if [[ -z ${TAG} || ${TAG} == "master" ]] ; then
