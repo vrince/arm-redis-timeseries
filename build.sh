@@ -32,7 +32,7 @@ make
 popd
 
 echo "🧊 Packing ..."
-find . -type f -name "redistimeseries.so" -exec cp {} "rredistimeseries.so" \;
+find . -type f -name "redistimeseries.so" -exec cp {} "redistimeseries.so" \;
 
 
 echo "✨ Done"
