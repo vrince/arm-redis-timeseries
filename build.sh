@@ -32,7 +32,7 @@ make
 popd
 
 echo "🧊 Packing ..."
-find . -type f -name "redis*.so" -exec gzip -v {} -c > "redis_timeseries-linux-${ARCH}-${DISTRO}-${TAG}.gz" \;
+find . -type f -name "redistimeseries.so" -exec cp {} "rredistimeseries.so" \;
 
 
 echo "✨ Done"
