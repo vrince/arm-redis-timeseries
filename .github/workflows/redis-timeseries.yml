@@ -38,7 +38,7 @@ jobs:
 
           install: |
             apt-get update -q -y
-            apt-get install -q -y wget jq curl git build-essential openssl libssl-dev python3 python3-dev autoconf libtool m4 automake
+            apt-get install -q -y wget jq curl git build-essential openssl libssl-dev python3 python3-dev autoconf libtool m4 automake cmake
 
           run: |
             ./build.sh ${{ matrix.arch }} ${{ matrix.distro }} ${{ github.ref_name }}

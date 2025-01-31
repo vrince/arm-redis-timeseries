@@ -4,7 +4,7 @@
 
 Automated [RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries) for arm 32bits (armv7). Primary target is raspberry-pi using 32 bits OS.
 
-See this repo for [Redis](https://github.com/vrince/arm-redis-timeseries)
+See this repo for [Redis](https://github.com/vrince/arm-redis)
 
 ## Install
 
