@@ -19,13 +19,9 @@ pushd "RedisTimeSeries"
 git checkout --quiet --detach "${TAG}"
 git describe --tags
 
-python3 --version
-python --version
-
 ./deps/readies/bin/getpy3
 
 python3 --version
-python --version
 
 echo "🔨 Building ..."
 make
