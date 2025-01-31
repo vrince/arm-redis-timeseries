@@ -1,8 +1,10 @@
 # arm-redis-timeseries
 
-[![redis-timeseries](https://github.com/vrince/arm-redis-stack/actions/workflows/redis-timeseries.yml/badge.svg)](https://github.com/vrince/arm-redis-stack/actions/workflows/redis-timeseries.yml)
+[![redis-timeseries](https://github.com/vrince/arm-redis-timeseries/actions/workflows/redis-timeseries.yml/badge.svg)](https://github.com/vrince/arm-redis-stack/actions/workflows/redis-timeseries.yml)
 
-Automated builds of [redis](https://github.com/redis/redis) and [RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries) for arm 32bits (armv6 / armv7). Primary target is raspberry-pi using 32 bits OS.
+Automated [RedisTimeSeries](https://github.com/RedisTimeSeries/RedisTimeSeries) for arm 32bits (armv7). Primary target is raspberry-pi using 32 bits OS.
+
+See this repo for [Redis](https://github.com/vrince/arm-redis-timeseries)
 
 ## Install
 
