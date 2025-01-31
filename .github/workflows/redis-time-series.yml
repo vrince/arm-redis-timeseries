@@ -22,13 +22,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    name: redis-timeseries ${{ matrix.arch }} / ${{ matrix.distro }} 
+    name: ${{ matrix.arch }} / ${{ matrix.distro }} 
 
     steps:
       - uses: actions/checkout@v2
 
       - uses: uraimo/run-on-arch-action@v2
-        name: Build RedisTimeSeries (on arm)
+        name: Build
         id: build-redis-timeseries
         with:
           arch: ${{ matrix.arch }}
