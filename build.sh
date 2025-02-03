@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCH="${1:-x86_64}"
-DISTRO="${2}"
+DISTRO="${2:-none}"
 TAG="${3:-v1.12.5}"
 
 echo "🦑 Arch(${ARCH})"
@@ -19,16 +19,16 @@ pushd "RedisTimeSeries"
 git checkout --quiet --detach "${TAG}"
 git describe --tags
 
-./deps/readies/bin/getpy3
-
 python3 --version
+python3 -m venv _env
+source  _env/bin/activate
 
 echo "🔨 Building ..."
 make
 popd
 
 echo "🧊 Packing ..."
-find . -type f -name "redistimeseries.so" -exec cp {} "redistimeseries.so" \;
+find . -type f -name "redistimeseries.so" -exec cp {} "redistimeseries-${ARCH}-${DISTRO}-${TAG}.so" \;
 
 
 echo "✨ Done"
